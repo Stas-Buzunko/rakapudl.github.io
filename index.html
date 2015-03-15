@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Name Randomizer</title>
+    <script src = "js/names.js"></script>
+    <link rel="stylesheet" href="switchery-master/dist/switchery.css" />
+    <script src="switchery-master/dist/switchery.js"></script>
+    <script src = "js/randomizer.js"></script>
+    <style>
+        #div1 {
+            min-width:100%;
+            text-align: center;
+            font-size: 500%;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+</div>
+<input id = "div1">
+<button id = "button" onclick = click1();>СГЕНЕРИРОВАТЬ</button>
+<div>
+    <input type="checkbox" class="js-switch" checked/>
+    <div class="check-change js-check-change-field">Два имени</div>
+</div>
+<script>
+    var elem = document.querySelector('.js-switch');
+    var init = new Switchery(elem);
+
+    var changeCheckbox = document.querySelector('.js-switch')
+            , changeField = document.querySelector('.js-check-change-field');
+
+    changeCheckbox.onchange = function() {
+        if(changeCheckbox.checked === true){
+            changeField.innerHTML = "Два имени";
+        }else{
+            changeField.innerHTML = "Одно имя";
+        }
+    };
+
+   var div = document.getElementById("div1");
+    var click1 = function() {
+
+        result(names);
+
+    };
+</script>
+</body>
+</html>
