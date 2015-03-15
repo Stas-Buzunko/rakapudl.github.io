@@ -1,27 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Name Randomizer</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src = "js/names.js"></script>
     <link rel="stylesheet" href="switchery-master/dist/switchery.css" />
-    <style>
-        #div1 {
-            min-width:100%;
-            text-align: center;
-            font-size: 500%;
-            background-color: gray;
-        }
-    </style>
+    <script src="switchery-master/dist/switchery.js"></script>
+    <script src = "js/randomizer.js"></script>
 </head>
 <body>
-</div>
-<input id = "div1">
-<button id = "button" onclick = click1();>СГЕНЕРИРОВАТЬ</button>
-<div>
+<input id = "div1" class="text-center center-block" disabled style = "margin-top: 10%; font-size:100px; width:100%; background-color:rgb(235, 235, 235); border:4px solid #c7c7c7; color:#000">
+<button id = "button" class="center-block" style = "margin-top: 10%;" onclick = click1();>СГЕНЕРИРОВАТЬ</button>
+<div style = "float:right; margin-right: 10%">
     <input type="checkbox" class="js-switch" checked/>
     <div class="check-change js-check-change-field">Два имени</div>
 </div>
 <script>
+    var a = [];
     var elem = document.querySelector('.js-switch');
     var init = new Switchery(elem);
 
@@ -42,9 +38,12 @@
         result(names);
 
     };
+    var save = function() {
+        var text = document.getElementById('text');
+        a.push(text.value);
+        names = names.concat(a);
+    }
 </script>
-    <script src = "js/names.js"></script>
-    <script src="switchery-master/dist/switchery.js"></script>
-    <script src = "js/randomizer.js"></script>
+
 </body>
 </html>
