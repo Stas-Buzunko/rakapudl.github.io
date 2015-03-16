@@ -1,0 +1,77 @@
+ body {
+		background-color: white;
+ }
+ 
+ #div1 {
+		min-width: 100%;
+		max-width: 100%;
+		text-align: center;
+		font-size: 4em;
+		background-color: rgba(108, 194, 148, 0.14);
+		color: rgb(71, 93, 102);
+		height: 200px;
+ }
+ 
+#button {
+	font-size: 20px;
+	display: block;
+	margin: 20px auto;
+	height: 50px;
+	width: 200px;
+	color: #fff;
+	background-color: #6496c8;
+	text-shadow: -1px 1px #417cb8;
+	border: none;
+}
+
+#button:hover,
+#button.hover {
+	background-color: #346392;
+	text-shadow: -1px 1px #27496d;
+}
+
+#button:active,
+#button.active {
+background-color: #27496d;
+text-shadow: -1px 1px #193047;
+}
+
+.block {
+	width: 150px;
+	float: right;
+	text-align: center;
+}
+
+.checkbox {
+	display: block;
+	margin: 0 auto;
+}
+
+.switchery {
+	margin: 0 auto;
+	display: block;
+}
+
+.add {
+	float:left;
+	font-size: 16px;
+	display: block;
+	height: 20px;
+	width: 100px;
+	color: #fff;
+	background-color: #6496c8;
+	text-shadow: -1px 1px #417cb8;
+	border: none;
+}
+
+.add:hover,
+.add.hover {
+	background-color: #346392;
+	text-shadow: -1px 1px #27496d;
+}
+
+.add:active,
+.add.active {
+background-color: #27496d;
+text-shadow: -1px 1px #193047;
+}
