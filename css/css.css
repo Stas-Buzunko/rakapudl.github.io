@@ -1,0 +1,215 @@
+@font-face {
+	font-family: '__BigBossIcon_5';
+	src: url("bigbossicon1.eot");
+	src: local('☺'), url("bigbossicon1.woff") format('woff'), url("bigbossicon1.svg") format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: '__Proxima Nova_5';
+	src: url("proximanova-bold.eot");
+	src: local('☺'), url("proximanova-bold.woff") format('woff'), url("proximanova-bold.svg")/*tpa=http://www.dariloff.ru/monopod_dlya_selfi/fonts/proximanova-bold.svg*/ format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: '__Proxima Nova_5';
+	src: url("proximanova-light.eot")/*tpa=http://www.dariloff.ru/monopod_dlya_selfi/fonts/proximanova-light.eot*/;
+	src: local('☺'), url("proximanova-light.woff")/*tpa=http://www.dariloff.ru/monopod_dlya_selfi/fonts/proximanova-light.woff*/ format('woff'), url("proximanova-light.svg")/*tpa=http://www.dariloff.ru/monopod_dlya_selfi/fonts/proximanova-light.svg*/ format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+.block2 span {
+	font-family: '__BigBossIcon_5';
+}
+
+body {
+	font-family: '__Proxima Nova_5';
+	width: 100%;
+}
+
+p, span, li {
+	font-size: 3em !important;
+}
+
+p span {
+ font-size: 1.2em !important;
+}
+
+.wrap, p {
+	min-width:100%;
+}
+
+div {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+img {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*Phone*/
+.phone {
+	padding: 20px 0;
+	text-align: center;
+	color: white;
+}
+
+.phone span:first-child {
+	font-weight: 700;
+	font-size: 1.2em;
+}
+/*Block1*/
+
+.block1 {
+	color: white;
+	min-height: 400px;
+	background: url("../img/bg1.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.block1 > span:nth-child(2),
+.block1 > span:nth-child(4) {
+	padding: 15px 0;
+	display: block;
+	width: 100%;
+	font-weight: 700;
+}
+
+.block1 > span:nth-child(2) {
+    background-color: #32729C;
+    background-color: rgba(0, 80, 132, 0.8);
+}
+
+.block1 > span:nth-child(4) {
+	background-color: rgba(241, 90, 36, 0.8);
+}
+
+.block1 > span:nth-child(6) {
+	font-size: 33px;
+	text-decoration: underline;
+}
+
+.block1 > span:nth-child(8) {
+	line-height: 40px;
+	margin-top: 20px;
+	display: block;
+	color: #01223D;
+	font-weight: 900;
+	font-size: 33px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*Block2*/
+.block2 {
+	background: url("../img/block2_bg.jpg") center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #025074;
+}
+
+.block2 p{
+	font-weight: 700;
+}
+
+.first,
+.second,
+.third {
+	border-top: 1px solid #025074;
+	border-bottom: 1px solid #025074;
+}
+
+.first span,
+.second span,
+.third span {
+	font-size: 200px !important;
+	display: block;
+	padding: 20px 0;
+}
+
+/*Block3*/
+
+.block3 {
+	background: url("../img/halftone.jpg");
+}
+
+.block3 p {
+	padding: 40px 0;
+	color: #01578A;
+}
+
+.block3 p span {
+	color: #F15A24;
+  	font-weight: 700;
+}
+
+/*Block4*/
+
+.block4 {
+	background-color: #fff;
+	background: #0D101C;
+}
+
+.block4 p {
+	color: white;
+	font-weight: 700;
+	font-size: 50px !important;
+}
+
+.block4 p span {
+	color: #F15A24;
+}
+
+.slide {
+	width: 90% !important;
+	background-size: cover;
+	margin: 20px auto;
+	border: 5px solid #999999;
+}
+
+.slide:nth-child(2) {
+	background: url("../img/slide1.jpg") no-repeat top center;
+}
+
+.slide:nth-child(3) {
+	background: url("../img/slide2.jpg") no-repeat top center;
+}
+
+.slide:nth-child(4) {
+	background: url("../img/slide3.jpg") no-repeat top center;
+}
+
+.rect {
+  width: 96%;
+  margin: 0 auto;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #FFFFFF;
+/*   transform: rotate(45deg); */
+	background-color: rgba(0, 0, 11, 0.6);
+	background: rgba(0, 0, 11, 0.6);
+	color: rgba(0, 0, 11, 0.6);
+}
+
+.rect p {
+	margin: 40px 0;
+	font-size: 50px !important;
+}
+
+/*Block5*/
+
+.block5 p {
+	color: #01578A;
+	font-weight: 700;
+	font-size: 50px !important;
+}
+
+.block5 p span {
+	color: #F15A24;
+}
