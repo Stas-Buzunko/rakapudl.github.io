@@ -13,7 +13,7 @@ a {
 
 /*Button*/
 .button {
-	font-size: 2em;
+	font-size: 1.5em;
 	display: inline-block;
 	padding: 6px 20px;
 	background-color: #63797C;
@@ -345,4 +345,62 @@ a {
 .inset-border:hover {
   outline: 4px solid rgba(0,0,0,0.5);
   outline-offset: -4px;
+}
+
+.flip-top-left-c:hover {
+	transform-origin: 0 0 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+.flip-bottom-left-c:hover {
+	transform-origin: 0 100% 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+.flip-right-top-c:hover {
+	transform-origin: 100% 0 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+.flip-right-bottom-c:hover {
+	transform-origin: 100% 100% 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+@-webkit-keyframes flip {
+	from { transform: rotateZ(0); opacity: 0.9;}
+	to   { transform: rotateZ(-360deg); opacity: 1;}
+}
+
+@keyframes flip {
+	from {	transform: rotateZ(0); opacity: 0.9;}
+	to   {  transform: rotateZ(-360deg); opacity: 1;}
+}
+
+.flipY-left-side:hover {
+	transform-origin: 0 50% 0;
+	transition: transform 0.8s ease-out;
+	transform: rotateY(-360deg);       
+}
+
+.flipY-right-side:hover {
+	transform-origin: 100% 50% 0;
+	transition: transform 0.8s ease-out;
+	transform: rotateY(-360deg);  
+}
+
+.flipX-top:hover {
+	transform-origin: 50% 0 0;
+	transition: transform 0.8s ease-out;
+	transform: rotateX(-360deg);    
+}
+
+.flipX-bottom:hover {
+	transform-origin: 50% 100% 0;
+	transition: transform 0.8s ease-out;
+	transform: rotateX(-360deg);    
 }
