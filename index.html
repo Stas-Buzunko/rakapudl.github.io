@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 		<title>Drakkar.css</title>
+		<script src="jquery-1.8.3.min.js"></script>
 <style>
 .wrap {
    max-width: 900px;
@@ -52,17 +53,7 @@ float: right;
 		<div class="wrap">
 			<a class="button drown" href="drakkar.css" download>Drakkar.css</a>
 			<p>Hover effects</p>
-			<div class="button flipZ no-hover">.flipZ</div>
-			<div class="button flipX no-hover">.flipX</div>
-			<div class="button flipX-top no-hover">.flipX-top</div>
-			<div class="button flipX-bottom no-hover">.flipX-bottom</div>
-			<div class="button flipY no-hover">.flipY</div>
-			<div class="button flipY-left-side no-hover">.flipY-left-side</div>
-			<div class="button flipY-right-side no-hover">.flipY-right-side</div>
-			<div class="button flip-top-left-c no-hover">.flip-top-left-c</div>
-			<div class="button flip-bottom-left-c no-hover">.flip-bottom-left-c</div>
-			<div class="button flip-right-top-c no-hover">.flip-right-top-c</div>
-			<div class="button flip-right-bottom-c no-hover">.flip-right-bottom-c</div>
+			<center>
 			<div class="button rotate-r no-hover">.rotate-r</div>
 			<div class="button rotate-l no-hover">.rotate-l</div>
 			<div class="button rotate no-hover">.rotate</div>
@@ -76,43 +67,38 @@ float: right;
 			<div class="button inset-border no-hover">.inset-border</div>
 			<div class="button uprise no-hover">.uprise</div>
 			<div class="button uprise2 no-hover">.uprise2</div>
-
+			<p>Rotate effects</p>
+			<div class="button a no-hover">.flipX</div>
+			<div class="button a no-hover">.flipY</div>
+			<div class="button a no-hover">.flipZ</div>
+			<div class="button a no-hover">.flip-top-left-c</div>
+			<div class="button a no-hover">.flip-bottom-left-c</div>
+			<div class="button a no-hover">.flip-right-top-c</div>
+			<div class="button a no-hover">.flip-right-bottom-c</div>
+			<div class="button a no-hover">.flipY-left-side</div>
+			<p>Show/hide effects</p>
+			<div class="button a no-hover" value=".ease-left">.ease-left</div>
+			<div class="button a no-hover" value=".ease-right">.ease-right</div>
+			<div class="button a no-hover" value=".ease-top">.ease-top </div>
+			<div class="button a no-hover" value=".ease-bottom">.ease-bottom</div>
+			<div class="button a no-hover" value=".ease-bottom">.fade-out</div>
 			<p>Active effects</p>
 			<div class="button drown">.drown</div>
 			<div class="button convex">.convex</div>
 			<div class="button convex2">.convex2</div>
 			<div class="button convex3">.convex3</div>
-			<div class="button inset-shadow no-hover">.inset-shadow</div>
-			<p>Uprise effects</p>
-			<div class="button ease-left no-hover">.ease-left</div>
-			<div class="button ease-right no-hover">.ease-right</div>
-			<div class="button ease-top  no-hover">.ease-top </div>
-			<div class="button ease-bottom no-hover">.ease-bottom</div>
+
 		</div>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter29275835 = new Ya.Metrika({id:29275835,
-                    clickmap:true,
-                    trackLinks:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/29275835" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+	<script>
+		$(".a").click(function(){
+			$(this).removeClass($(this));
+			var text = $(this).text().substr(1);
+			$(this).addClass(text);
+			var elem = $(this);
+			setTimeout(function() {
+				elem.removeClass(text);
+			}, 2000)
+		});
+	</script>
 	</body>
 </html>

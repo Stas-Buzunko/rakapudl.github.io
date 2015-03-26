@@ -61,10 +61,10 @@ a {
 }
 
 .rotate-l {
-	-webkit-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
-  	-moz-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
-  	-o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
-  	transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+	-webkit-transition: all 100ms ease;
+  	-moz-transition: all 100ms ease;
+  	-o-transition: all 100ms ease;
+  	transition: all 100ms ease;
 }
 
 .rotate-l:hover {
@@ -76,10 +76,10 @@ a {
 }
 
 .rotate-r {
-	-webkit-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
-  	-moz-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
-  	-o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
-  	transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+	-webkit-transition: all 100ms ease;
+  	-moz-transition: all 100ms ease;
+  	-o-transition: all 100ms ease;
+  	transition: all 100ms ease;
 }
 
 
@@ -245,33 +245,6 @@ a {
 	opacity: 1.2;
 }
 
-.flipX {
-	
-}
-
-.flipX:hover {
-	transition: transform 0.8s ease;
-	transform: rotateX(-360deg);        
-}
-
-.flipY {
-	
-}
-
-.flipY:hover {
-	transition: transform 0.8s ease;
-	transform: rotateY(-360deg);       
-}
-
-.flipZ {
-	
-}
-
-.flipZ:hover {
-	transition: transform 0.5s ease;
-	transform: rotateZ(-360deg);       
-}
-
 .shadow {
   transition: all 0.2s ease;
 }
@@ -347,64 +320,6 @@ a {
   outline-offset: -4px;
 }
 
-.flip-top-left-c:hover {
-	transform-origin: 0 0 0;
-	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
-    animation: flip 0.4s;
-}
-
-.flip-bottom-left-c:hover {
-	transform-origin: 0 100% 0;
-	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
-    animation: flip 0.4s;
-}
-
-.flip-right-top-c:hover {
-	transform-origin: 100% 0 0;
-	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
-    animation: flip 0.4s;
-}
-
-.flip-right-bottom-c:hover {
-	transform-origin: 100% 100% 0;
-	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
-    animation: flip 0.4s;
-}
-
-@-webkit-keyframes flip {
-	from { transform: rotateZ(0); opacity: 0.9;}
-	to   { transform: rotateZ(-360deg); opacity: 1;}
-}
-
-@keyframes flip {
-	from {	transform: rotateZ(0); opacity: 0.9;}
-	to   {  transform: rotateZ(-360deg); opacity: 1;}
-}
-
-.flipY-left-side:hover {
-	transform-origin: 0 50% 0;
-	transition: transform 0.8s ease-out;
-	transform: rotateY(-360deg);       
-}
-
-.flipY-right-side:hover {
-	transform-origin: 100% 50% 0;
-	transition: transform 0.8s ease-out;
-	transform: rotateY(-360deg);  
-}
-
-.flipX-top:hover {
-	transform-origin: 50% 0 0;
-	transition: transform 0.8s ease-out;
-	transform: rotateX(-360deg);    
-}
-
-.flipX-bottom:hover {
-	transform-origin: 50% 100% 0;
-	transition: transform 0.8s ease-out;
-	transform: rotateX(-360deg);    
-}
-
 .uprise:hover {
 	-webkit-animation: uprise 0.8s; /* Chrome, Safari, Opera */ 
     animation: uprise 0.8s;
@@ -432,23 +347,23 @@ a {
 }
 
 .ease-left {
-	-webkit-animation: ease-left 2s infinite ease;
-    animation: ease-left 2s infinite ease;
+	-webkit-animation: ease-left 2s ease;
+    animation: ease-left 2s ease;
 }
 
 .ease-right {
-	-webkit-animation: ease-right 2s infinite ease 1s;
-    animation: ease-right 2s infinite ease 1s;
+	-webkit-animation: ease-right 2s ease;
+    animation: ease-right 2s ease;
 }
 
 .ease-top {
-	-webkit-animation: ease-top 2s infinite ease 2s;
-    animation: ease-top 2s infinite ease 2s;
+	-webkit-animation: ease-top 2s ease;
+    animation: ease-top 2s ease;
 }
 
 .ease-bottom {
-	-webkit-animation: ease-top 2s infinite ease 3s;
-    animation: ease-top 2s infinite ease 3s;
+	-webkit-animation: ease-bottom 2s ease;
+    animation: ease-bottom 2s ease;
 }
 
 
@@ -490,4 +405,74 @@ a {
 @keyframes ease-bottom {
 	from { transform: translate(0, 400%); opacity: 0;}
 	to   { transform: translate(0, 0); opacity: 1;}
+}
+
+.flip-top-left-c {
+	transform-origin: 0 0 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+.flip-bottom-left-c {
+	transform-origin: 0 100% 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+.flip-right-top-c {
+	transform-origin: 100% 0 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+.flip-right-bottom-c {
+	transform-origin: 100% 100% 0;
+	-webkit-animation: flip 0.4s; /* Chrome, Safari, Opera */ 
+    animation: flip 0.4s;
+}
+
+@-webkit-keyframes flip {
+	from { transform: rotateZ(0); opacity: 0.9;}
+	to   { transform: rotateZ(-360deg); opacity: 1;}
+}
+
+@keyframes flip {
+	from {	transform: rotateZ(0); opacity: 0.9;}
+	to   {  transform: rotateZ(-360deg); opacity: 1;}
+}
+
+.flipY-left-side {
+	transform-origin: 0 50% 0;
+	transition: transform 0.8s ease-out;
+	transform: rotateY(-360deg);       
+}
+
+.flipX {
+	transition: transform 0.8s ease;
+	transform: rotateX(-360deg);        
+}
+
+.flipY {
+	transition: transform 0.8s ease;
+	transform: rotateY(-360deg);       
+}
+
+.flipZ {
+	transition: transform 0.5s ease;
+	transform: rotateZ(-360deg);       
+}
+
+.fade-out {
+	-webkit-animation: fade-out 2s ease;
+    animation: fade-out 2s ease;
+}
+
+@-webkit-keyframes fade-out {
+	from { transform: scale(0); opacity: 0;}
+	to   { transform: scale(1); opacity: 1;}
+}
+
+@keyframes fade-out {
+	from { transform: scale(0); opacity: 0;}
+	to   { transform: scale(1); opacity: 1;}
 }
