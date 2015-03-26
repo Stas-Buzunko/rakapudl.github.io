@@ -548,3 +548,25 @@ a {
 	30% {transform: scale(1.6) rotate3d(1,0,0,270deg);}
 	to{transform: scale(1);}
 }
+
+.hover-inf {
+	-webkit-animation: jump-flip 5s infinite linear;
+    animation: jump-flip 5s infinite linear;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes jump-flip {
+	0%   {transform: scale(1)}
+	25%  {transform: scale(1.02)}
+	50%  {transform: scale(1)}
+	75%  {transform: scale(0.98)}
+	100% {transform: scale(1)}
+}
+
+@keyframes jump-flip {
+	0%   {transform: scale(1)}
+	25%  {transform: scale(1.02)}
+	50%  {transform: scale(1)}
+	75%  {transform: scale(0.98)}
+	100% {transform: scale(1)}
+}
