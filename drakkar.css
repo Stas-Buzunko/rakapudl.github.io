@@ -531,3 +531,20 @@ a {
 	20% {transform: scale(1.2);}
 	to   { transform: rotate3d(0,1,0,90deg);opacity: 0.7;}
 }
+
+.jump-flip {
+	-webkit-animation: jump-flip 1s cubic-bezier(.51,-0.93,.94,1.17);
+    animation: jump-flip 1s cubic-bezier(.51,-0.93,.94,1.17);
+} 
+
+@-webkit-keyframes jump-flip {
+	from{}
+	30% {transform: scale(1.6) rotate3d(1,0,0,270deg);}
+	to{transform: scale(1);}
+}
+
+@keyframes jump-flip {
+	from{}
+	30% {transform: scale(1.6) rotate3d(1,0,0,270deg);}
+	to{transform: scale(1);}
+}
