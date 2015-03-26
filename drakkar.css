@@ -404,3 +404,90 @@ a {
 	transition: transform 0.8s ease-out;
 	transform: rotateX(-360deg);    
 }
+
+.uprise:hover {
+	-webkit-animation: uprise 0.8s; /* Chrome, Safari, Opera */ 
+    animation: uprise 0.8s;
+}
+
+.uprise2 {
+	transition: all 0.5s ease-in-out;
+	opacity: 0.1;
+	transform: scale(0.5);
+}
+
+.uprise2:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+@-webkit-keyframes uprise {
+	from { transform: scale(3); opacity: 0;}
+	to   { transform: scale(1); opacity: 1;}
+}
+
+@keyframes uprise {
+	from { transform: scale(3); opacity: 0;}
+	to   { transform: scale(1); opacity: 1;}
+}
+
+.ease-left {
+	-webkit-animation: ease-left 2s infinite ease;
+    animation: ease-left 2s infinite ease;
+}
+
+.ease-right {
+	-webkit-animation: ease-right 2s infinite ease 1s;
+    animation: ease-right 2s infinite ease 1s;
+}
+
+.ease-top {
+	-webkit-animation: ease-top 2s infinite ease 2s;
+    animation: ease-top 2s infinite ease 2s;
+}
+
+.ease-bottom {
+	-webkit-animation: ease-top 2s infinite ease 3s;
+    animation: ease-top 2s infinite ease 3s;
+}
+
+
+@-webkit-keyframes ease-left {
+	from { transform: translate(-400%); opacity: 0;}
+	to   { transform: translate(0); opacity: 1;}
+}
+
+@keyframes ease-left {
+	from { transform: translate(-400%); opacity: 0;}
+	to   { transform: translate(0); opacity: 1;}
+}
+
+@-webkit-keyframes ease-right {
+	from { transform: translate(400%); opacity: 0;}
+	to   { transform: translate(0); opacity: 1;}
+}
+
+@keyframes ease-right {
+	from { transform: translate(400%); opacity: 0;}
+	to   { transform: translate(0); opacity: 1;}
+}
+
+@-webkit-keyframes ease-top {
+	from { transform: translate(0, -400%); opacity: 0;}
+	to   { transform: translate(0, 0); opacity: 1;}
+}
+
+@keyframes ease-top {
+	from { transform: translate(0, -400%); opacity: 0;}
+	to   { transform: translate(0, 0); opacity: 1;}
+}
+
+@-webkit-keyframes ease-bottom {
+	from { transform: translate(0, 400%); opacity: 0;}
+	to   { transform: translate(0, 0); opacity: 1;}
+}
+
+@keyframes ease-bottom {
+	from { transform: translate(0, 400%); opacity: 0;}
+	to   { transform: translate(0, 0); opacity: 1;}
+}
