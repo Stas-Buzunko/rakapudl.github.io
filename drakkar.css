@@ -721,9 +721,9 @@ a {
     animation: ease-r 1.2s ease;
 }
 
-.ease-rand {	
-	-moz-transform-origin: 50% 50% 0;
-		 transform-origin: 50% 50% 0;
+.ease-vrt {	
+	-moz-transform-origin: 50% 50% 50%;
+		 transform-origin: 50% 50% 50%;
 	-webkit-animation:ease-r 1.2s ease;
     -moz-animation: easet-r 1.2s ease;
     animation: ease-r 1.2s ease;
