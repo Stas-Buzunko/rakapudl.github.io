@@ -785,20 +785,19 @@ a {
 	to {-moz-opacity: 1; opacity: 1;}
 }
 
-.border-inf {
-	-webkit-animation: border-inf 3s infinite ease;
-    -moz-animation: border-inf 3s ease;
-    animation: border-inf 3s infinite ease;
+.shadow-inf {
+	-webkit-animation: shadow-inf 3s infinite linear;
+    -moz-animation: shadow-inf 3s linear;
+    animation: shadow-inf 3s infinite linear;
 }
 
-@-webkit-keyframes border-inf {
-	from {-moz-border: 10px solid black; border: 10px solid black;}
-	50% {-moz-border: 30px solid rgba(255,255,255,0.1); border: 30px solid rgba(255,255,255,0.1);}
-	to {-moz-border: 10px solid rgba(255,255,255,0.1); border: 10px solid rgba(255,255,255,0.1);}
+@-webkit-keyframes shadow-inf {
+	from {box-shadow: 0 0 25px black;}
+	50% {box-shadow: 0 0 0 black;}
+	to {box-shadow: 0 0 25px black;}
 }
 
-@keyframes border-inf {
-	from {-moz-border: 10px solid black; border: 10px solid black;}
-	50% {-moz-border: 30px solid rgba(255,255,255,0.1); border: 30px solid rgba(255,255,255,0.1);}
-	to {-moz-border: 10px solid rgba(255,255,255,0.1); border: 10px solid rgba(255,255,255,0.1);}
-}
+@keyframes shadow-inf {
+	from {box-shadow: 0 0 25px black;}
+	50% {box-shadow: 0 0 0 black;}
+	to {box-shadow: 0 0 25px black;}
