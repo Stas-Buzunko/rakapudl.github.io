@@ -659,16 +659,16 @@ a {
 
 @-webkit-keyframes hover-inf {
 	0%   {-moz-transform: scale(1);transform: scale(1);}
-	25%  {-moz-transform: scale(1.02);transform: scale(1.02);}
+	25%  {-moz-transform: scale(1.01);transform: scale(1.01);}
 	50%  {-moz-transform: scale(1);transform: scale(1);}
-	75%  {-moz-transform: scale(0.98);transform: scale(0.98);}
+	75%  {-moz-transform: scale(0.99);transform: scale(0.99);}
 	100% {-moz-transform: scale(1);transform: scale(1);}
 }
 
 @keyframes hover-inf {
 	0%   {-moz-transform: scale(1);transform: scale(1);}
-	25%  {-moz-transform: scale(1.02);transform: scale(1.02);}
+	25%  {-moz-transform: scale(1.01);transform: scale(1.01);}
 	50%  {-moz-transform: scale(1);transform: scale(1);}
-	75%  {-moz-transform: scale(0.98);transform: scale(0.98);}
+	75%  {-moz-transform: scale(0.99);transform: scale(0.99);}
 	100% {-moz-transform: scale(1);transform: scale(1);}
 }
