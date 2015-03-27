@@ -672,3 +672,88 @@ a {
 	75%  {-moz-transform: scale(0.99);transform: scale(0.99);}
 	100% {-moz-transform: scale(1);transform: scale(1);}
 }
+
+.ease-left-c {	
+	-moz-transform-origin: 0 0 0;
+		 transform-origin: 0 0 0;
+	-webkit-animation:ease-c 1.2s ease;
+    -moz-animation: ease-c 1.2s ease;
+    animation: ease-c 1.2s ease;
+}
+
+.ease-right-c {	
+	-moz-transform-origin: 100% 0 0;
+		 transform-origin: 100% 0 0;
+	-webkit-animation:ease-c 1.2s ease;
+    -moz-animation: easet-c 1.2s ease;
+    animation: ease-c 1.2s ease;
+}
+
+.ease-top-left {	
+	-moz-transform-origin: -100% 0 0;
+		 transform-origin: -100% 0 0;
+	-webkit-animation:ease-c 1.2s ease;
+    -moz-animation: easet-c 1.2s ease;
+    animation: ease-c 1.2s ease;
+}
+
+.ease-top-right {	
+	-moz-transform-origin: 200% 0 0;
+		 transform-origin: 200% 0 0;
+	-webkit-animation:ease-r 1.2s ease;
+    -moz-animation: easet-r 1.2s ease;
+    animation: ease-r 1.2s ease;
+}
+
+.ease-bottom-right {	
+	-moz-transform-origin: 150% 100% 0;
+		 transform-origin: 150% 100% 0;
+	-webkit-animation:ease-c 1.2s ease;
+    -moz-animation: easet-c 1.2s ease;
+    animation: ease-c 1.2s ease;
+}
+
+.ease-bottom-left {	
+	-moz-transform-origin: -100% 100% 0;
+		 transform-origin: -100% 100% 0;
+	-webkit-animation:ease-r 1.2s ease;
+    -moz-animation: easet-r 1.2s ease;
+    animation: ease-r 1.2s ease;
+}
+
+.ease-rand {	
+	-moz-transform-origin: 50% 50% 0;
+		 transform-origin: 50% 50% 0;
+	-webkit-animation:ease-r 1.2s ease;
+    -moz-animation: easet-r 1.2s ease;
+    animation: ease-r 1.2s ease;
+}
+
+
+@-webkit-keyframes ease-c {
+	from {-moz-transform: rotateZ(-110deg); -moz-opacity: 0; 
+		transform: rotateZ(-110deg); opacity: 0;}
+	to {-moz-transform: rotate(0); -moz-opacity: 1;
+		transform: rotate(0); opacity: 1;}
+}
+
+@keyframes ease-c {
+	from {-moz-transform: rotateZ(-110deg); -moz-opacity: 0; 
+		transform: rotateZ(-110deg); opacity: 0;}
+	to {-moz-transform: rotate(0); -moz-opacity: 1;
+		transform: rotate(0); opacity: 1;}
+}
+
+@-webkit-keyframes ease-r {
+	from {-moz-transform: rotateZ(110deg); -moz-opacity: 0; 
+		transform: rotateZ(110deg); opacity: 0;}
+	to {-moz-transform: rotate(0); -moz-opacity: 1;
+		transform: rotate(0); opacity: 1;}
+}
+
+@keyframes ease-r {
+	from {-moz-transform: rotateZ(110deg); -moz-opacity: 0; 
+		transform: rotateZ(110deg); opacity: 0;}
+	to {-moz-transform: rotate(0); -moz-opacity: 1;
+		transform: rotate(0); opacity: 1;}
+}
