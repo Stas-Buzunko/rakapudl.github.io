@@ -1,7 +1,5 @@
 /*Drakkar by Rakapudl*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700,300,400&subset=latin,cyrillic);
-
 * {
 	padding: 0;
 	margin: 0;
@@ -13,7 +11,7 @@ a {
 
 /*Button*/
 .button {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	display: inline-block;
 	padding: 6px 20px;
 	background-color: #63797C;
