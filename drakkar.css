@@ -838,3 +838,35 @@ a {
 	50% {-moz-transform: scale() rotateZ(360deg);transform: scale(3) rotateZ(360deg);}
 	to {-moz-transform: scale(1);transform: scale(1);}
 }
+
+.turnout-left {
+	-webkit-animation: turnout-left 2s cubic-bezier(.91,-0.29,.26,.91);
+    -moz-animation: turnout-left 2s cubic-bezier(.91,-0.29,.26,.91);
+    animation: turnout-left 2s  cubic-bezier(.91,-0.29,.26,.91);
+}
+
+@-webkit-keyframes turnout-left {
+	from {}
+	to {-moz-transform: translate(-300px, 0));transform: translate(-300px, 0); -moz-opacity: 0; opacity: 0;}
+}
+
+@keyframes turnout-left {
+	from {}
+	to {-moz-transform: translate(-300px, 0));transform: translate(-300px, 0); -moz-opacity: 0; opacity: 0;}
+}
+
+.turnout-right {
+	-webkit-animation: turnout-right 2s cubic-bezier(.91,-0.29,.26,.91);
+    -moz-animation: turnout-right 2s cubic-bezier(.91,-0.29,.26,.91);
+    animation: turnout-right 2s  cubic-bezier(.91,-0.29,.26,.91);
+}
+
+@-webkit-keyframes turnout-right {
+	from {}
+	to {-moz-transform: translate(300px, 0));transform: translate(300px, 0); -moz-opacity: 0; opacity: 0;}
+}
+
+@keyframes turnout-right {
+	from {}
+	to {-moz-transform: translate(300px, 0));transform: translate(300px, 0); -moz-opacity: 0; opacity: 0;}
+}
