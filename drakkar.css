@@ -68,10 +68,10 @@ a {
 }
 
 .rotate-l:hover {
-	-webkit-transform: rotate(-6deg); /* Chrome y Safari */
-	-moz-transform: rotate(-6deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(-6deg); /* Opera */
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(-6deg);
 	-moz-box-shadow: 0 0 1px transparent;
 		 box-shadow: 0 0 1px transparent;
 
@@ -86,17 +86,17 @@ a {
 
 
 .rotate-r:hover {
-	-webkit-transform: rotate(6deg); /* Chrome y Safari */
-	-moz-transform: rotate(6deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(6deg); /* Opera */
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(6deg);
 	-moz-box-shadow: 0 0 1px transparent;
 		 box-shadow: 0 0 1px transparent;
 }
 
 .rotate:hover {
-	-webkit-animation-name: rotate; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+	-webkit-animation-name: rotate;
+    -webkit-animation-duration: 0.3s;
     animation-name: rotate;
     animation-duration: 0.3s;
     -moz-box-shadow: 0 0 1px transparent;
@@ -105,49 +105,49 @@ a {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rotate {
-    0%   {	-webkit-transform: rotate(0deg); /* Chrome y Safari */
-	-moz-transform: rotate(0deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(0deg); /* Opera */}
-    25%  {	-webkit-transform: rotate(2deg); /* Chrome y Safari */
-	-moz-transform: rotate(2deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(2deg); /* Opera */}
-    50%  {	-webkit-transform: rotate(0deg); /* Chrome y Safari */
-	-moz-transform: rotate(0deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(0deg); /* Opera */}
-    75%  {	-webkit-transform: rotate(-2deg); /* Chrome y Safari */
-	-moz-transform: rotate(-2deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(-2deg); /* Opera */}
-    100% {	-webkit-transform: rotate(0deg); /* Chrome y Safari */
-	-moz-transform: rotate(0deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(0deg); /* Opera */}
+    0%   {	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
+	-o-transform: rotate(0deg);}
+    25%  {	-webkit-transform: rotate(2deg); 
+	-moz-transform: rotate(2deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(2deg);}
+    50%  {	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(0deg);}
+    75%  {	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(-2deg);}
+    100% {	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(0deg);}
 }
 
 @keyframes rotate {
-    0%   {	-webkit-transform: rotate(0deg); /* Chrome y Safari */
-	-moz-transform: rotate(0deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(0deg); /* Opera */}
-    25%  {	-webkit-transform: rotate(2deg); /* Chrome y Safari */
-	-moz-transform: rotate(2deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(2deg); /* Opera */}
-    50%  {	-webkit-transform: rotate(0deg); /* Chrome y Safari */
-	-moz-transform: rotate(0deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(0deg); /* Opera */}
-    75%  {	-webkit-transform: rotate(-2deg); /* Chrome y Safari */
-	-moz-transform: rotate(-2deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(-2deg); /* Opera */}
-    100% {	-webkit-transform: rotate(0deg); /* Chrome y Safari */
-	-moz-transform: rotate(0deg); /* Firefox */
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
-	-o-transform: rotate(0deg); /* Opera */}
+    0%   {	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(0deg);}
+    25%  {	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(2deg);}
+    50%  {	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(0deg);}
+    75%  {	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(-2deg);}
+    100% {	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	-o-transform: rotate(0deg);}
 }
 
 .wiggle {
@@ -155,8 +155,8 @@ a {
 }
 
 .wiggle:hover {
-	-webkit-animation-name: wiggle; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+	-webkit-animation-name: wiggle;
+    -webkit-animation-duration: 0.3s;
     animation-name: wiggle;
     animation-duration: 0.3s;	
 }
@@ -184,7 +184,7 @@ a {
 }
 
 .buzz:hover {
-    -webkit-animation: buzz 0.1s infinite; /* Chrome, Safari, Opera */ 
+    -webkit-animation: buzz 0.1s infinite;
     animation: buzz 0.1s infinite;
 }
 
