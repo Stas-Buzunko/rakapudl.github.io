@@ -787,7 +787,7 @@ a {
 
 .shadow-inf {
 	-webkit-animation: shadow-inf 3s infinite linear;
-    -moz-animation: shadow-inf 3s linear;
+    -moz-animation: shadow-inf 3s infinite linear;
     animation: shadow-inf 3s infinite linear;
 }
 
@@ -801,3 +801,40 @@ a {
 	from {box-shadow: 0 0 25px black;}
 	50% {box-shadow: 0 0 0 black;}
 	to {box-shadow: 0 0 25px black;}
+}
+
+.fade-bounce {
+	-webkit-animation: fade-bounce 2.5s cubic-bezier(.91,-0.29,.26,.91);
+    -moz-animation: fade-bounce 2.5s cubic-bezier(.91,-0.29,.26,.91);
+    animation: fade-bounce 2.5s  cubic-bezier(.91,-0.29,.26,.91);	
+}
+
+@-webkit-keyframes fade-bounce {
+	from {-moz-transform: scale(0.1);transform: scale(0.1);}
+	50% {-moz-transform: scale(2);transform: scale(2);}
+	to {-moz-transform: scale(1);transform: scale(1);}
+}
+
+@keyframes fade-bounce {
+	from {-moz-transform: scale(0.1);transform: scale(0.1);}
+	50% {-moz-transform: scale(2);transform: scale(2);}
+	to {-moz-transform: scale(1);transform: scale(1);}
+}
+
+.fade-bounce2 {
+	-webkit-animation: fade-bounce2 2.5s cubic-bezier(.91,-0.29,.26,.91);
+    -moz-animation: fade-bounce2 2.5s cubic-bezier(.91,-0.29,.26,.91);
+    animation: fade-bounce2 2.5s  cubic-bezier(.91,-0.29,.26,.91);	
+}
+
+@-webkit-keyframes fade-bounce2 {
+	from {-moz-transform: scale(0.1);transform: scale(0.1);}
+	50% {-moz-transform: scale(3) rotateZ(360deg);transform: scale(3) rotateZ(360deg);}
+	to {-moz-transform: scale(1);transform: scale(1);}
+}
+
+@keyframes fade-bounce2 {
+	from {-moz-transform: scale(0.1);transform: scale(0.1);}
+	50% {-moz-transform: scale() rotateZ(360deg);transform: scale(3) rotateZ(360deg);}
+	to {-moz-transform: scale(1);transform: scale(1);}
+}
