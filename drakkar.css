@@ -870,3 +870,16 @@ a {
 	from {}
 	to {-moz-transform: translate(300px, 0));transform: translate(300px, 0); -moz-opacity: 0; opacity: 0;}
 }
+
+.flipXY {
+	-webkit-transform-origin: 50% 50%;
+			transform-origin: 50% 50%;
+	-webkit-animation: flipXY 2s ease;
+	-moz-animation: flipXY 2s ease;
+}
+
+@-webkit-keyframes flipXY {
+	from{}
+	100% {transform:rotate3d(1,-1,0,360deg) rotate3d(1,0,0,360deg);
+		-moz-transform:rotate3d(1,-1,0,360deg) rotate3d(1,0,0,360deg);}
+}
