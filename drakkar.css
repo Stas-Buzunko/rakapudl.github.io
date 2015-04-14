@@ -360,7 +360,7 @@ a {
 }
 
 .fade-in {
-            animation: fade-in 1s ease;
+    animation: fade-in 1s ease;
 }
 
 @keyframes fade-in {
@@ -374,13 +374,13 @@ a {
 
 
 @keyframes flipX-hide {
-	from  1;opacity: 1;}
+	from  {opacity: 1;}
 	20% {transform: scale(1.2);}
 	to   {transform: rotate3d(1,0,0,90deg);opacity: 0.7;}
 }
 
 .flipY-hide {
-    	 animation: flipY-hide 1s;
+    animation: flipY-hide 1s;
 }
 
 @keyframes flipY-hide {
