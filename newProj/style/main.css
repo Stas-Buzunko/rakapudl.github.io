@@ -5,27 +5,27 @@ body {
   height: 100%;
   color: #3d4452;
 }
-
-.types {
-	border-top: 1px rgb(226, 214, 210);
-	height: 650px;
+h1 {
+  background-color: #F2FEFF;
+  padding: 20px 0;
+  text-align: center;
+  color: #08648E;
 }
-
-
-
+.types {
+  border-top: 1px rgb(226, 214, 210);
+  height: 650px;
+}
 .index {
   width: 1000px;
   margin: 0 auto;
 }
 .col1 {
   overflow: hidden;
-	margin-top: 15px;
+  margin-top: 15px;
 }
-
 .col1:nth-child(4n+1) {
-	margin-left: 0;
+  margin-left: 0;
 }
-
 .col_txt {
   font-size: 15px;
   padding: 0 !important;
@@ -43,4 +43,52 @@ body {
   text-align: center;
   color: white;
   font-size: 15px;
+  margin-top: -4px;
+}
+.form-block {
+  height: 180px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fafafa;
+  box-shadow: 1px 0 3px rgb(213, 222, 220);
+}
+.form-block h2 {
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+.form-block input[type="tel"] {
+  box-shadow: 0 0 3px gray;
+  width: 500px;
+  height: 25px;
+  padding: 10px;
+  -webkit-transition: border .3s;
+  -moz-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+  border: none;
+  border-bottom: solid 2px #00557C;
+}
+.center {
+  text-align: center;
+}
+.submit {
+  margin-left: 15px;
+  background-color: #0077b3;
+  color: #fff;
+  padding: 0 35px;
+  height: 45px;
+  padding: 0px 50px;
+  border: solid 1px #2483b3;
+  cursor: pointer;
+  line-height: 45px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 0.4s;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+.submit:hover {
+  background-color: #2692c8;
 }
