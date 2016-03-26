@@ -1,0 +1,113 @@
+.header {
+  display: table;
+  width: 100%;
+  width: 100%;
+  background-color: #00557C;
+}
+.header ul {
+  width: 1050px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.header ul li {
+  width: 150px;
+  float: left;
+  list-style: none;
+  transition: background-color 0.2s ease;
+}
+.header ul li:hover {
+  background-color: #186D94;
+}
+.header ul li a {
+  display: table-cell;
+  text-decoration: none;
+  position: relative;
+  width: 20%;
+  padding: 20px 0;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 30px;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+body > .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+  border-right: 1px solid #CECECE;
+  border-left: 1px solid #CECECE;
+  background-color: #FFFFFF;
+  -moz-box-shadow: 0 0 12 0 #CECECE;
+  -webkit-box-shadow: 0 0 12px 0 #CECECE;
+  box-shadow: 0 0 12px 0 #CECECE;
+}
+.header__menu-list-block {
+  min-width: 1100px;
+  margin: 0 71px 0 130px;
+}
+#content-body .col1 {
+  margin-right: 25px;
+}
+.col1 {
+  position: relative;
+  width: 23.5%;
+  min-width: 218px;
+  height: auto;
+  float: left;
+  margin-left: 2%;
+}
+.col_set div:first-child {
+  margin-left: 0;
+}
+.col_txt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 6% 6%;
+  color: #FFF;
+}
+.col_big {
+  display: block;
+  padding-bottom: 15%;
+  color: #333;
+  font-size: 18px;
+}
+.col_big2 {
+  font-size: 24px;
+}
+.col_big3 {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.col_inner_set {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.col_inner {
+  position: relative;
+  width: 225px;
+  height: 210 px;
+  float: left;
+  margin-right: 17px;
+}
+.col_inner_set div:last-child {
+  margin-right: 0;
+}
+.col_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 225px;
+  color: #FFF;
+}
+.col_inner_big {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(245, 106, 0, .8);
+  font-size: 18px;
+}

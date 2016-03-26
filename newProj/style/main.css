@@ -1,0 +1,46 @@
+body {
+  background: #F7F7F7 !important;
+  font-family: "Fira Sans Medium", sans-serif;
+  font-weight: normal;
+  height: 100%;
+  color: #3d4452;
+}
+
+.types {
+	border-top: 1px rgb(226, 214, 210);
+	height: 650px;
+}
+
+
+
+.index {
+  width: 1000px;
+  margin: 0 auto;
+}
+.col1 {
+  overflow: hidden;
+	margin-top: 15px;
+}
+
+.col1:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+.col_txt {
+  font-size: 15px;
+  padding: 0 !important;
+}
+.col_big {
+  margin-bottom: 70px;
+  padding-bottom: 0;
+  background-color: rgba(254, 198, 6, 0.8);
+  padding: 10px !important;
+}
+.bot_block {
+  display: block;
+  background: #00557C;
+  padding: 15px 6%;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
