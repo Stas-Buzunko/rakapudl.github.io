@@ -5,6 +5,9 @@ body {
   height: 100%;
   color: #3d4452;
 }
+.button_red {
+  display: none;
+}
 h1 {
   background-color: #F2FEFF;
   padding: 20px 0;
@@ -56,7 +59,7 @@ h1 {
   font-weight: lighter;
   font-size: 30px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 44px;
 }
 .form-block input[type="tel"] {
   box-shadow: 0 0 3px gray;
