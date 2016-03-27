@@ -31,7 +31,7 @@ var appendLightBlock = function() {
     
     var innerBlock = $('#in-content > div:nth-child(7) > noindex > div'); 
     var tparserHref = "http://tparser.org/";
-    var innerElement = "<a target='_blank' rel='nofollow' class='fo-link fo-60' style='color:#90C564;' href='" + tparserHref + gameName + "'>Скачать Торрент</a><br>";
+    var innerElement = "<a target='_blank' rel='nofollow' class='fo-link fo-60' style='color:#90C564;' href='" + tparserHref + gameName + "'>РЎРєР°С‡Р°С‚СЊ РўРѕСЂСЂРµРЅС‚</a><br>";
 
     innerBlock.prepend(innerElement);
 };
