@@ -95,3 +95,151 @@ h1 {
 .submit:hover {
   background-color: #2692c8;
 }
+.blocks_index_right {
+  width: 440px;
+  background: rgba(7, 6, 6, 0.12);
+  z-index: 10;
+  top: 240px;
+  left: 50%;
+  padding: 22px;
+  border-radius: 6px;
+}
+.block_calc {
+  position: relative;
+  padding: 0px 0 18px 0;
+}
+.block_calc p {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.block_calc h2 {
+  margin: 0 0 18px 0;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 0 2px 0 #ffffff;
+  text-transform: uppercase;
+}
+.block_calc .calc-form {
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  zoom: 1;
+  margin-right: 10px;
+}
+.block_calc .calc-form label {
+  font-size: 26px;
+  line-height: 1em;
+}
+.block_calc .calc-form .form-row {
+  margin-top: 5px;
+  padding: 0 0 4px 0;
+}
+.block_calc .calc-form label {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  font-size: 15px;
+  color: #000;
+  padding: 0 10px 0 5px;
+  width: 118px;
+  text-align: right;
+  line-height: 110%;
+  margin-top: 10px;
+}
+.block_calc .calc-form input[type="text"] {
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  color: #08648E;
+  background: #FFFFFF;
+  width: 45px;
+  font-size: 24px;
+  text-align: center;
+  padding: -2.8em 0;
+  height: 30px;
+  border-radius: 6;
+  box-shadow: 1px 1px 3px inset;
+}
+.block_calc .calc-form .error {
+  border-color: #f90000 !important;
+}
+.block_calc .price-block {
+  padding: 129px;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  border: 1px #08648E solid;
+  background: rgba(255, 255, 255, 0.31);
+  color: #08648E;
+  margin-top: 5px;
+  padding: 39px 0px 13px;
+  width: 334px;
+  height: 137px;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px inset;
+  margin-left: 8px;
+}
+input[type="tel"] {
+  box-shadow: 0 0 3px gray;
+  width: 250px;
+  height: 25px;
+  padding: 10px;
+  -webkit-transition: border .3s;
+  -moz-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+  border: none;
+  border-bottom: solid 2px #00557C;
+}
+
+}
+.block_calc .price-block .red {
+  color: #F90000;
+}
+.block_calc .price-block .price-css {
+  color: #08648E;
+  font-size: 59px;
+  line-height: 1.2em;
+  margin: 17px 0;
+  font-weight: bold;
+}
+.block_calc .price-block .price-css span {
+  margin-right: 10px;
+}
+.block_calc .price-block .price {
+  margin: 16px 0 10px 0;
+}
+.block_calc .price-block .price-small-font {
+  margin: 16px 0 0;
+  font-size: 30px;
+}
+.block_calc .price-block .price-small-font span {
+  font-size: 40px;
+}
+.bg-block {
+  padding-top: 20px;
+  height: 520px;
+  width: 100%;
+  background: url('../img/bg.jpg') no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-box-shadow: 0 0 12 0 #CECECE;
+  -webkit-box-shadow: 0 0 12px 0 #CECECE;
+  box-shadow: 0 0 12px 0 #CECECE;
+}
+.blocks_index_right {
+  margin: 0 auto;
+  height: 300px;
+  width: 900px;
+  border: 1px solid #00557C;
+  background-color: rgba(250, 250, 250, 0.39);
+  box-shadow: 1px 0 3px rgb(213, 222, 220);
+}
