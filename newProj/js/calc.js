@@ -12,6 +12,10 @@ $(document).ready(function() {
     _value = $(this).is("#calc-light-quantity") ? ($(this).val() == "" ? 0 : $(this).val()) : _value;
     if (/\d/.test(_value) && parseInt(_value) >= min && parseInt(_value) <= max) {
 
+var squarePrice = 400;
+var anglePrice = 200;
+var lightPrice = 650;
+var trubaPrice = 310;
 
       var $form = $(this).closest("form"),
         square = parseInt($form.find("#calc-square").val()),
@@ -21,7 +25,7 @@ $(document).ready(function() {
         $priceBlock = $form.siblings(".price-block").find(".price"),
         $priceBlockCredit = $form.siblings(".price-block").find(".js-price-credit");
 
-      var summary = Math.round(square * 400 + Math.sqrt(square) * 4 * 120 + angleQuantity * 200 + lightQuantity * 650 + trubaQuantity * 310),
+      var summary = Math.round(square * squarePrice + angleQuantity * anglePrice + lightQuantity * lightPrice + trubaQuantity * trubaPrice),
         therest = (summary % 1000).toString(),
         thousands = Math.floor(summary / 1000);
 
