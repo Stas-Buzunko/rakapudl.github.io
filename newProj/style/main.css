@@ -312,6 +312,7 @@ input[type="tel"] {
 }
 
 .check {
+  text-transform: uppercase;
   padding: 13px 0;
   width: 200px;
   display: inline-block;
@@ -333,6 +334,55 @@ input[type="tel"] {
   border: none;
 }
 
+.un1 .check {
+  padding: 16px 0;
+width: 140px;
+font-size: 15px;
+}
+
 .block_calc {
   position: static !important;
+}
+
+.photo-block {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.photo-block .img-cont {
+  float: left;
+  width: 194px;
+  height: 200px;
+  overflow: hidden;
+  margin: 3px;
+
+}
+
+.img-cont {
+  cursor: zoom-in;;
+}
+
+.img-cont img {
+  height: 200px;
+}
+
+.modal {
+  z-index: 999;
+  display: none;
+  background: rgba(0, 0, 0, 0.37);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.img-modal {
+  cursor: zoom-out;
+  margin: 100px auto;
+  width: 800px;
+  height: 600px;
+  background-color: white;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
 }
