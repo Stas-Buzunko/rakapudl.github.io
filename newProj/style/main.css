@@ -470,13 +470,31 @@ height: 540px;
 }
 
 .slider_1 .desc {
-  position: absolute;
-  bottom: 35px;
-width: 445px;
-  background: rgba(1, 86, 125, 0.86);
-  padding: 25px 25px 10px;
-  font-size: 30px;
-  color: #FFFFFF;
+    position: absolute;
+    top: 42px;
+    width: 1147px;
+    background: rgba(1, 86, 125, 0.86);
+    padding: 32px 25px;
+    font-size: 30px;
+    color: #FFFFFF;
+    border-top: 7px dashed;
+    border-bottom: 7px dashed;
+}
+
+.slider_1 .desc1 {
+    position: absolute;
+    bottom: 85px;
+    width: 445px;
+    background: rgba(1, 86, 125, 0.86);
+    /* padding: 24px 0px 15px 94px; */
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+#id-block5 {
+  width: 570px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .counter {
@@ -522,10 +540,10 @@ width: 445px;
 
 .sl_form {
     position: absolute;
-    top: 236px;
+    top: 246px;
     color: white;
-    right: 85px;
-    width: 304px;
+    right: 135px;
+    width: 454px;
     height: 240px;
     padding: 12px;
     border-radius: 5px;
@@ -551,7 +569,7 @@ width: 445px;
 
 .sl_form .inp_wrap input[type=text] {
     margin-bottom: 2px;
-    width: 86%;
+    width: 91%;
     background: #fff;
     border: none;
     height: 47px;
@@ -562,6 +580,6 @@ width: 445px;
 }
 
 .pink {
-  margin-left: 53px !important;
+    margin-left: 134px !important;
   margin-top: 16px;
 }
