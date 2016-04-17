@@ -427,3 +427,141 @@ font-size: 14px;
 .pagination img.selected, .pagination img:hover{
     border-color: #b3ba36;
 }
+
+.stock {
+  width: 100%;
+
+}
+
+.slider_1 {
+height: 540px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px #a09d98;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.slide_cont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+.item img {
+      width: 1198px;
+}
+
+.ul_null {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide_cont li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.slider_1 .desc {
+  position: absolute;
+  bottom: 35px;
+width: 445px;
+  background: rgba(1, 86, 125, 0.86);
+  padding: 25px 25px 10px;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.counter {
+    margin-top: 10px;
+}
+
+.counter .txt {
+    float: left;
+    width: 155px;
+    margin-right: 2px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.counter .counts {
+    float: left;
+    margin-top: 3px;
+}
+
+.slider_1 .sliderBullets {
+    position: absolute;
+    bottom: 12px;
+    left: 165px;
+    z-index: 95;
+    font-size: 0;
+}
+.slider_1 .sliderBullets g {
+  cursor: pointer;
+    float: left;
+    margin-right: 13px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border: 2px solid rgba(255,255,255,.5);
+}
+
+.slider_1 .sliderBullets g.active {
+    cursor: default;
+    background: #fff;
+    border: 2px solid #fff;
+}
+
+.sl_form {
+    position: absolute;
+    top: 236px;
+    color: white;
+    right: 85px;
+    width: 304px;
+    height: 240px;
+    padding: 12px;
+    border-radius: 5px;
+    background: #fff;
+    background: rgba(0, 85, 124, 0.79);
+}
+.sl_form .name {
+    color: white;
+    font-size: 18px;
+    margin-top: 21px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.sl_form .inp_wrap {
+    margin-bottom: 12px;
+    margin-top: 29px;
+}
+
+.sl_form .inp_wrap input[type=text]:first-child {
+    border-radius: 2px 2px 0 0;
+}
+
+.sl_form .inp_wrap input[type=text] {
+    margin-bottom: 2px;
+    width: 86%;
+    background: #fff;
+    border: none;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #737373;
+}
+
+.pink {
+  margin-left: 53px !important;
+  margin-top: 16px;
+}
