@@ -337,7 +337,7 @@ input[type="tel"] {
 .un1 .check {
   padding: 16px 0;
 width: 140px;
-font-size: 15px;
+font-size: 14px;
 }
 
 .block_calc {
@@ -385,4 +385,45 @@ font-size: 15px;
   background-color: white;
   -webkit-background-size: cover !important;
   background-size: cover !important;
+}
+
+.fifth-frame #code{
+    margin-left: 8px;
+    width: 130px;
+}
+.catalog-cell{
+    background: url(../images/decor.png) left center no-repeat;
+    padding-left: 62px;
+}
+.sliderr1{
+    width: 100%;
+    height: 500px;
+}
+.sliderr1 a {
+    display: block;
+    width: 582px;
+    height: 500px;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.sliderr1 img {
+    width: 575px;
+}
+
+
+
+.pagination{
+    width: 1010px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.pagination img{
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+.pagination img.selected, .pagination img:hover{
+    border-color: #b3ba36;
 }

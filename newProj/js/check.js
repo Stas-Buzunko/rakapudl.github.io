@@ -8,7 +8,9 @@ var lustra = 500;
 var mat = 550;
 var satin = 550;
 var glyanec = 575;
-var cvetn = 650;
+var cvetn = 750;
+var mnogour = 1400;
+var fotop = 1750;
 
 var descor = 1100;
 var clipso = 1400;
@@ -69,12 +71,12 @@ btn.click(function(){
         break;
 
     case 'МНОГОУРОВНЕВЫЕ':
-        sqPrice = cvetn;
+        sqPrice = mnogour;
         changePrice();
         break;
 
     case 'ФОТОПЕЧАТЬ':
-        sqPrice = cvetn;
+        sqPrice = fotop;
         changePrice();
         break;
 

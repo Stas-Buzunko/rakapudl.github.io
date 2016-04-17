@@ -1,5 +1,5 @@
-$('.img-cont').click(function(){
-  var src = $(this).children('img').attr("src");
+$('.pagination img').click(function(){
+  var src = $(this).attr("src");
   $(".img-modal").css("background", "url(" + src + ") center center");
   $(".modal").fadeIn('ease');
 });
