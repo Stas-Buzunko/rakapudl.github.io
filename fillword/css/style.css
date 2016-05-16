@@ -1,8 +1,8 @@
 *{margin: 0; padding: 0}
 
    @font-face {
-    font-family: Benguiat; /* Имя шрифта */
-    src: url(beng.ttf); /* Путь к файлу со шрифтом */
+    font-family: "Benguiat"; /* Имя шрифта */
+    src: url(Beng.ttf); /* Путь к файлу со шрифтом */
    }
 
 body {
