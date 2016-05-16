@@ -55,12 +55,14 @@ td {
   user-select: none;
 }
 
-.select {
-  background: #F5A5F5 !important;
-}
+
 
 .finded {
   background: #91BCFF !important;
+}
+
+.select {
+  background: #F5A5F5 !important;
 }
 
 .finded-word {
