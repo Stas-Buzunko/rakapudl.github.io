@@ -281,6 +281,7 @@ input[type="tel"] {
 .video-block {
     width: 48%;
   margin: 18px 5px;
+      height: 350px;
   float: left;
   border: 3px #08648E solid;
   padding-bottom: 10px;

@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0}
+
+   @font-face {
+    font-family: Benguiat; /* Имя шрифта */
+    src: url(beng.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+  font-family: "Benguiat";
+}
+
+
+.app {
+  zoom: 0.57;
+  margin: 150px auto;
+  width: 1920px;
+  height: 1080px;
+  background: url("../img/bg.jpg");
+    -webkit-box-shadow: 0 0 132px 0 #611FFF;
+  -moz-box-shadow: 0 0 132px 0 #611FFF;
+    box-shadow: 0 0 132px 0 #611FFF;
+}
+
+.app td{
+  width: 78px;
+  height: 78px;
+  text-transform: uppercase;
+  font-size: 62px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #0356a6;
+  background-color: #ffccff;
+
+}
+
+table {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.64),
+  -4px -4px 16px rgba(0, 0, 0, 0.64);
+  float: right;
+  margin-top: 125px;
+  margin-right: 70px;
+  border-spacing: 0px;
+}
+
+td {
+
+}
+
+.app tr {
+  margin: 10px 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.select {
+  background: #F5A5F5 !important;
+}
+
+.finded {
+  background: #91BCFF !important;
+}
+
+.finded-word {
+  opacity: 1 !important;
+}
+
+.wordBlock {
+  display: inline-block;
+  margin-left: 70px;
+  width: 607px;
+}
+
+.wordBlock div span span {
+  transition: opacity 0.5s ease;
+  text-align: center;
+  opacity: 0;
+  font-size: 65px;
+  display: block;
+  line-height: 111px;
+}
+
+body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
+  margin-top: 24px;
+}
+
+.wordBlock div {
+  height: 90px;
+  border-bottom: 1px solid black;
+}
+
+.audio {
+  opacity: 1 !important;
+  cursor: pointer;
+  float: left;
+  width: 88px;
+  height: 90px;
+  z-index: 3;
+  background: url("../img/audio.png");
+}
+
+.break {
+  display: inline-block;
+  margin: 724px 0 0 75px;
+}
+
+.break img {
+  cursor: pointer;
+}
+
+.name {
+  position: relative;
+  top: 15px;
+}

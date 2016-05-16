@@ -27,10 +27,10 @@
 ">
 			<li><a href="#types">Виды потолков</a></li>
 			<li><a href="#our-works">Наши работы</a></li>
-			<li><a href="">Цены</a></li>
+			<li><a href="#types">Цены</a></li>
 			<li><a href="#calc">Калькулятор цен</a></li>
 			<li><a href="#cont">Контакты</a></li>
-			<li><a href="">Вопрос-ответ</a></li>
+			<li><a href="#rip">Вопрос-ответ</a></li>
 			<li><a href="#rip">Ремонт потолка</a></li>
 		</ul>
 	</header>
@@ -60,9 +60,9 @@
                     <div class="pt_bold">ВЫЗВАТЬ БЕСПЛАТНО
                     </div>МАСТЕРА-ЗАМЕРЩИКА
                   </div>
-                  <form action="form2.php" method="post">
+                  <form action="form.php" method="post">
                     <div class="inp_wrap">
-                      <input class="bbox" type="text" value="" placeholder="Введите Ваш телефон*" name="contact_tel" required=""><input type="hidden" value="Обратный звонок" name="contact_type">
+                      <input class="bbox" type="text" value="" placeholder="Введите Ваш телефон*" name="phone" required=""><input type="hidden" value="Обратный звонок" name="contact_type">
 </div>
                     <input type="submit" class="but pink bbox submit" value="ОТПРАВИТЬ">
 </form>
@@ -74,7 +74,7 @@
 	<div class="container">
 <!--AKC END-->
 		<!--PHOTOS  -->
-				<h1>Фото натяжных потолков</h1>
+				<h1 id = "our-works">Фото наших работ</h1>
 		<div class="fourth-frame">
 		<div class="center"><table>
 		</table><div class="clear"></div>
@@ -133,9 +133,9 @@
 		<div class="form-block">
 			<h2>Бесплатный вызов замерщика</h2>
 			<div class="center">
-				<form action="">
-					<input type="tel" name="phone" placeholder="Номер телефона">
-					<div class="submit">Перезвонить мне</div>
+				<form action="form.php" method="post">
+					<input type="tel" value="" name="phone" placeholder="Номер телефона" required="">
+					<div class="submit" onclick="$( this ).parent('form').submit();">Перезвонить мне</div>
 				</form>
 			</div>
 		</div>
@@ -274,7 +274,7 @@
 			</div>
 		</div>
 		<div class="video-block">
-			<div class="vid-prev">	<p class="tit">В квартире     <span>49 000р.</span></p>
+			<div class="vid-prev">	<p class="tit">В квартире     <span>8 000р.</span></p>
 				<div class="wr">
 					Время, потраченное специалистами на монтаж натяжных потолков, в моей квартире, просто поражает. Ребята справились меньше чем за 3 часа. Осталась очень доволена работой, буду вас рекомендовать всем!
 			</div>
@@ -283,11 +283,11 @@
 			</div>
 		</div>
 		<div class="video-block">
-			<div class="vid-prev"><p class="tit">В квартире     <span>27 000р.</span></p>
+			<div class="vid-prev"><p class="tit">В квартире     <span>27 560р.</span></p>
 				<div class="wr">
 			 Очень-очень аккуратная работа, почти ювелирная. Спасибо ребята за всё! Всем довольны!
 			</div>
-			<iframe src="https://www.youtube.com/embed/PPrvx3bH1Uo?showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/PPrvx3bH1Uo?showinfo=0" frameborder="0" style="    margin-top: 75px;" allowfullscreen></iframe>
 
 			</div>
 		</div>
@@ -482,9 +482,9 @@
 		<div class="form-block">
 			<h2>Бесплатный вызов замерщика</h2>
 			<div class="center">
-				<form action="">
-					<input type="tel" name="phone" placeholder="Номер телефона">
-					<div class="submit">Перезвонить мне</div>
+				<form action="form.php" method="post">
+					<input type="tel" value="" name="phone" placeholder="Номер телефона" required="">
+					<div class="submit" onclick="$( this ).parent('form').submit();">Перезвонить мне</div>
 				</form>
 			</div>
 		</div>
@@ -495,6 +495,11 @@
 	<!-- CALCULATOR -->
 	<div class="bg-block" id = "calc">
 		<h1 style="margin-top: 20px;">РАССЧИТАТЬ СТОИМОСТЬ УСТАНОВКИ НАТЯЖНОГО ПОТОЛКА ПОД КЛЮЧ</h1>
+		<h2 style="    text-align: center;
+    font-size: 30px;
+    color: #F9534D;
+    text-transform: uppercase;
+    font-weight: 300;">минимальная сумма заказа 6500р.</h2>
 	<section class="blocks_index_right">
 		<div class="tabs">
 			<div class="top">
@@ -548,11 +553,11 @@
 						<div>рублей в месяц</div>
 					</div>
 				</div>
-				<form action="" style="margin-top: 57px;">
+				<form action="form.php" method="post" style="margin-top: 57px;">
 					<p style="font-size: 25px;text-align:center;-webkit-margin-before: 0;-webkit-margin-after: 8px;">Бесплатная консультация специалиста</p>
 	<center>
-					<input type="tel" name="phone" placeholder="Номер телефона">
-					<div class="submit">Перезвонить мне</div>
+					<input type="tel" value="" name="phone" placeholder="Номер телефона" required="">
+					<div class="submit" onclick="$( this ).parent('form').submit();">Перезвонить мне</div>
 				</center>
 				</form>
 </form>
