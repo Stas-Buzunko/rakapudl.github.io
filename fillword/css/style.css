@@ -15,7 +15,7 @@ body {
   margin: 150px auto;
   width: 1920px;
   height: 1080px;
-  background: url("../img/bg.jpg");
+  background: url("../Img/bg.jpg");
     -webkit-box-shadow: 0 0 132px 0 #611FFF;
   -moz-box-shadow: 0 0 132px 0 #611FFF;
     box-shadow: 0 0 132px 0 #611FFF;
@@ -98,7 +98,7 @@ body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
   width: 88px;
   height: 90px;
   z-index: 3;
-  background: url("../img/audio.png");
+  background: url("../Img/audio.png");
 }
 
 .break {

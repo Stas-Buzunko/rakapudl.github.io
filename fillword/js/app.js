@@ -14,7 +14,7 @@ function drawBoard(level) {
         }
     }
 
-    $('.app').append("<div class='wordBlock'><img class='name'src='img/" + name + "'></div>");
+    $('.app').append("<div class='wordBlock'><img class='name'src='Img/" + name + "'></div>");
     // блок со списком слов 
     for (var a in words) {
         $('.wordBlock').append('<div><span><div class = "audio"></div><span>' + a + '</span></span></div>');
