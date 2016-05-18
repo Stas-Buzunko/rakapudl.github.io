@@ -1,0 +1,41 @@
+.container {
+	background: url("bg.jpg");
+	zoom: 0.57;
+  	margin: 150px auto;
+  	width: 1920px;
+  	height: 1080px;
+    -webkit-box-shadow: 0 0 132px 0 #611FFF;
+  	-moz-box-shadow: 0 0 132px 0 #611FFF;
+    box-shadow: 0 0 132px 0 #611FFF;
+}
+
+.block {
+	width: 711px;
+	float: right;
+    width: 711px;
+    margin-right: 100px;
+    margin-top: 121px;
+}
+
+.button img {
+    margin-left: 267px;
+    padding-bottom: 75px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button img:hover {
+    -webkit-filter: brightness(110%);
+}
+
+.gif-block {
+	width: 711px;
+	height: 711px;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.64),
+ 	-4px -4px 16px rgba(0, 0, 0, 0.64);
+}
+
+.gif-block img{
+	width: 711px;
+}
+

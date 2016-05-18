@@ -16,8 +16,8 @@ var level1 = [
 var name = "colors.png";
 
 var words = {
-  BLACK: "bla",
-  WHITE: "BLA2",
+  BLACK: "",
+  WHITE: "",
   RED: "",
   YELLOW: "",
   BLUE: "",

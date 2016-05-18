@@ -87,7 +87,7 @@ function checkWord() {
     for (var i in words) {
         if (selectedWord == i) {
             $(".select").addClass("finded");
-            $(".wordBlock div span span:contains('" + String(i) + "')").addClass('finded-word');
+            $(".wordBlock div span span:contains('" + String(i) + "')").addClass('finded-word').css("color", i);
             resetSelect()
         }
     }
