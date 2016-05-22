@@ -34,10 +34,12 @@ body {
 }
 
 table {
+  position: relative;
+  z-index: 100;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.64),
   -4px -4px 16px rgba(0, 0, 0, 0.64);
   float: right;
-  margin-top: 125px;
+  margin-top: 50px;
   margin-right: 70px;
   border-spacing: 0px;
 }
@@ -72,9 +74,16 @@ td {
 }
 
 .wordBlock {
-  display: inline-block;
+  position: relative;
+  top: -957px;
+  left: 300px;
   margin-left: 70px;
-  width: 607px;
+  max-width: 607px;
+      flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 1080px;
 }
 
 .wordBlock div span span {
@@ -92,11 +101,16 @@ body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
 }
 
 .wordBlock div {
-  height: 90px;
+  height: 80px;
   border-bottom: 1px solid black;
 }
 
+.wordBlock > div {
+  margin: 3px 0;
+}
+
 .audio {
+  position: relative;
   opacity: 1 !important;
   cursor: pointer;
   float: left;
@@ -104,6 +118,7 @@ body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
   height: 90px;
   z-index: 3;
   background: url("../Img/audio.png");
+  border: none !important;
 }
 
 .break {
@@ -111,11 +126,42 @@ body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
   margin: 724px 0 0 75px;
 }
 
-.break img {
+.break img, .audio, .btns img {
   cursor: pointer;
+}
+
+.break img:hover, .audio:hover, .btns img:hover {
+    -moz-transform: rotate(0deg) scale(1.1, 1.1) skewX(0deg) skewY(0deg) translate(0px, 0px);
+    -webkit-transform: rotate(0deg) scale(1.1, 1.1) skew(0deg, 0deg) translate(0px, 0px);
+    -o-transform: rotate(0deg) scale(1.1, 1.1) skew(0deg, 0deg) translate(0px, 0px);
+    -ms-transform: rotate(0deg) scale(1.1, 1.1) skew(0deg, 0deg) translate(0px, 0px);
+    transform: rotate(0deg) scale(1.1, 1.1) skew(0deg, 0deg) translate(0px, 0px);
+box-shadow: 0 0 1px transparent
 }
 
 .name {
   position: relative;
   top: 15px;
+      width: 400px;
+          margin: 0 auto;
+}
+
+.win {
+  width: 100%;
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.btns {
+  width: 940px;
+  display: inline-block;
+  float: right;
+}
+
+.btns img {
+  cursor: pointer;
+  margin: 0 63px;
 }

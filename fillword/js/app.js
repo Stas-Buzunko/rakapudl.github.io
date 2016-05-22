@@ -4,6 +4,16 @@ var selectedWord = "";
 // Координаты последнего выбранного блока
 var lastSelect = {};
 var firstSelect = true;
+var winCount = 0;
+
+var level = animals.board;
+var levelName = "colors";
+var words = animals.words;
+var solve = animals.solve;
+
+if(level[0].length > 10) {
+  $(".app table").css("zoom", ".9");
+}
 
 // Отрисовываем уровень по заданному массиву
 function drawBoard(level) {
@@ -16,13 +26,14 @@ function drawBoard(level) {
 
     $('.app').append("<div class='wordBlock'><img class='name'src='Img/" + name + "'></div>");
     // блок со списком слов 
-    for (var a in words) {
-        $('.wordBlock').append('<div><span><div class = "audio"></div><span>' + a + '</span></span></div>');
-    }
+    words.forEach(function(item, i, arr) { 
+     $('.wordBlock').append('<div><span><div class = "audio" id='+ item +'></div><span>' + item + '</span></span></div>');
+    });
+        
 };
 
 
-drawBoard(level1);
+drawBoard(level);
 
 $("td").mousedown(function() {
     // проверяем выбран ли элемент
@@ -84,11 +95,47 @@ function addChar(element) {
 
 // проверяем соответствие слова 
 function checkWord() {
-    for (var i in words) {
-        if (selectedWord == i) {
+    words.forEach(function(item, i, arr) {
+    if (selectedWord == item) {
             $(".select").addClass("finded");
-            $(".wordBlock div span span:contains('" + String(i) + "')").addClass('finded-word').css("color", i);
+            $(".wordBlock div span span:contains('" + String(item) + "')").addClass('finded-word');
             resetSelect()
         }
+         }); 
+}
+
+// Сброс уровня 
+
+$(".reset").click(function() {
+  resetSelect();
+  $("td").removeClass('finded');
+  $(".wordBlock div span span").removeClass('finded-word');
+  winCount = 0;
+});
+
+// Воспроизвидение звука при нажатии на кнопку 
+
+$(".audio").click(function() {
+  var name = $(this).attr( "id" );
+  var audio = new Audio('js/' + levelName + '/' +name.toLowerCase() + '.mp3');
+  audio.play();
+});
+
+$(".solve").click(function() {
+  solveFind();
+});
+
+function solveFind() {
+  $(".wordBlock div span span").addClass('finded-word');
+  for(var i = 0; i<solve.length; i+=4) {
+    if(solve[i] == solve[i+2]) {
+      for(var a = 0; a<= solve[i+3]-solve[i+1]; a++) {
+        $("td[x=" + solve[i] +"][y=" + (solve[i+1]+a) + "]").addClass('finded');
+      }
+    } else {
+        for(var a = 0; a<= solve[i+2]-solve[i]; a++) {
+          $("td[x=" + (solve[i]+a) +"][y=" + (solve[i+1]) + "]").addClass('finded');
+        }
     }
+  }
 }
