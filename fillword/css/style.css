@@ -30,6 +30,8 @@ body {
   vertical-align: middle;
   border: 2px solid #0356a6;
   background-color: #ffccff;
+  text-shadow: 0px 0px 5px white,
+  0px 0px 5px gray,;
 
 }
 
@@ -42,10 +44,11 @@ table {
   margin-top: 50px;
   margin-right: 70px;
   border-spacing: 0px;
+  background: #ffccff;
 }
 
 td {
-
+    transition: all 0.3s ease;
 }
 
 .app tr {
@@ -60,7 +63,8 @@ td {
 
 
 .finded {
-  background: #91BCFF !important;
+    text-shadow: 0px 0px 5px white,
+    0px 0px 5px gray;
 }
 
 
@@ -71,14 +75,15 @@ td {
 
 .finded-word {
   opacity: 1 !important;
+    text-shadow: 0px 0px 8px white;
 }
 
 .wordBlock {
   position: relative;
   top: -957px;
-  left: 300px;
+  left: 340px;
   margin-left: 70px;
-  max-width: 607px;
+  max-width: 547px;
       flex-direction: column;
     display: flex;
     justify-content: space-between;
@@ -93,7 +98,8 @@ td {
   font-size: 65px;
   text-shadow: 1px 1px 1px black;
   display: block;
-  line-height: 111px;
+  position: relative;
+    left: -35px;
 }
 
 body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
@@ -101,7 +107,7 @@ body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
 }
 
 .wordBlock div {
-  height: 80px;
+  height: 70px;
   border-bottom: 1px solid black;
 }
 
@@ -114,11 +120,14 @@ body > div.gamebox > div > div.wordBlock > div:nth-child(2) {
   opacity: 1 !important;
   cursor: pointer;
   float: left;
+  float: left;
+    right: 100px;
   width: 88px;
-  height: 90px;
+  height: 95px;
   z-index: 3;
-  background: url("../Img/audio.png");
-  border: none !important;
+    background: url("../Img/audio.png") no-repeat;
+    border: none !important;
+    background-size: contain;
 }
 
 .break {
@@ -141,9 +150,9 @@ box-shadow: 0 0 1px transparent
 
 .name {
   position: relative;
-  top: 15px;
-      width: 400px;
-          margin: 0 auto;
+  top: 45px;
+  height: 127px;
+  margin: 0 auto;
 }
 
 .win {

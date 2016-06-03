@@ -5,11 +5,16 @@ var selectedWord = "";
 var lastSelect = {};
 var firstSelect = true;
 var winCount = 0;
+var level, levelName, words, solve;
 
-var level = animals.board;
-var levelName = "colors";
-var words = animals.words;
-var solve = animals.solve;
+function setLevel(lvl, title) {
+  level = lvl.board;
+  levelName = title;
+  words = lvl.words;
+  solve = lvl.solve;
+};
+
+setLevel(rooms, "rooms");
 
 if(level[0].length > 10) {
   $(".app table").css("zoom", ".9");
@@ -23,13 +28,11 @@ function drawBoard(level) {
             $('.app table tr').last().append("<td y=" + i + " x=" + j + ">" + level[i][j] + "</td>");
         }
     }
-
-    $('.app').append("<div class='wordBlock'><img class='name'src='Img/" + name + "'></div>");
+    $('.app').append("<div class='wordBlock'><img class='name'src='Img/words/" + levelName + ".png'></div>");
     // блок со списком слов 
     words.forEach(function(item, i, arr) { 
      $('.wordBlock').append('<div><span><div class = "audio" id='+ item +'></div><span>' + item + '</span></span></div>');
-    });
-        
+    }); 
 };
 
 
@@ -97,7 +100,8 @@ function addChar(element) {
 function checkWord() {
     words.forEach(function(item, i, arr) {
     if (selectedWord == item) {
-            $(".select").addClass("finded");
+
+            $(".select").addClass("finded").css("background", randColor());
             $(".wordBlock div span span:contains('" + String(item) + "')").addClass('finded-word');
             resetSelect()
         }
@@ -108,7 +112,7 @@ function checkWord() {
 
 $(".reset").click(function() {
   resetSelect();
-  $("td").removeClass('finded');
+  $("td").removeClass('finded').css("background", "#ffccff");
   $(".wordBlock div span span").removeClass('finded-word');
   winCount = 0;
 });
@@ -128,14 +132,46 @@ $(".solve").click(function() {
 function solveFind() {
   $(".wordBlock div span span").addClass('finded-word');
   for(var i = 0; i<solve.length; i+=4) {
+
+        var c1 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    var c2 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    c1.rgb = 'rgba('+c1.r+','+c1.g+','+c1.b+', 0.4)';
+    c2.rgb = 'rgba('+c2.r+','+c2.g+','+c2.b+', 0.4)';
+    var grad = 'radial-gradient(at center, '+c1.rgb+', '+c2.rgb+')';
+
     if(solve[i] == solve[i+2]) {
       for(var a = 0; a<= solve[i+3]-solve[i+1]; a++) {
-        $("td[x=" + solve[i] +"][y=" + (solve[i+1]+a) + "]").addClass('finded');
+        $("td[x=" + solve[i] +"][y=" + (solve[i+1]+a) + "]").addClass('finded').css("background", grad);
       }
     } else {
         for(var a = 0; a<= solve[i+2]-solve[i]; a++) {
-          $("td[x=" + (solve[i]+a) +"][y=" + (solve[i+1]) + "]").addClass('finded');
+          $("td[x=" + (solve[i]+a) +"][y=" + (solve[i+1]) + "]").addClass('finded').css("background", grad);
         }
     }
   }
-}
+};
+
+function randColor()
+{
+    var c1 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    var c2 = {
+        r: Math.floor(Math.random()*255),
+        g: Math.floor(Math.random()*255),
+        b: Math.floor(Math.random()*255)
+    };
+    c1.rgb = 'rgba('+c1.r+','+c1.g+','+c1.b+', 0.4)';
+    c2.rgb = 'rgba('+c2.r+','+c2.g+','+c2.b+', 0.4)';
+    return 'radial-gradient(at center, '+c1.rgb+', '+c2.rgb+')';
+};

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.3.min.js"></script>
+
+
+
+</head>
+<body>
+	<div id="fullpage">
+    <div class="section third">
+        <div class="text2"><span>
+            Компания Фаберлик предлагает Вам потрясающую возможность преобщиться к миру красоты и очарования, став нашим консультантом! Присоединившись к нам, Вы сможете начать свой собственный бизнес! Работать столько, сколько считаете это необходимым и только тогда, когда Вам это удобно! Вы получите неограниченные возможности для личностного и профессионального роста.
+        </span></div>
+    </div>
+		<div class="section one">
+            <nav style="position: fixed; top:0; width:100%; z-index:99;">
+                <ul>
+                    <li><a href=""><h1 class="title">ФАБЕРЛИК <br>РЕГИСТРАЦИЯ</h1></a></li>
+                    <li class="menu"><a href="">Регистрация</a></li>
+                    <li class="menu"><a href="">О Нас</a></li>
+                </ul>
+            </nav>
+            <div class="">
+            <img class="img" src="img/pres.jpg" alt="" style="padding-top: 70px">
+            <div class="center">
+        <div class="text col-md-6"><span><p>ОТЛИЧНО ВЫГЛЯДЕТЬ</p>
+Наслаждайтесь красотой и здоровьем с помощью наших высококачественных продуктов – начиная с декоративной косметики и заканчивая линейкой продуктов Вэлнэс для красоты и здоровья. В наших каталогах только самые популярные продукты, самые модные тенденции, последние достижения науки по уходу за кожей и фантастически выгодные предложения.</span></div>
+        <div class="text col-md-6"><span>
+            <p>ЗАРАБАТЫВАТЬ ДЕНЬГИ</p>
+Начните получать прибыль сразу после регистрации в качестве Консультанта Орифлэйм. Ставьте себе цели, определяйте уровень дохода и количество рабочего времени. Стройте успешную бизнес-карьеру, или просто время от времени рекомендуйте понравившиеся продукты друзьям и близким.
+        </span></div> 
+               <div class="text col-md-6"><span>
+<p>ПОЛУЧАТЬ УДОВОЛЬСТВИЕ</p>
+С Орифлэйм вы сами себе начальник. Получайте удовольствие от жизни, встречайтесь с интересными людьми, путешествуйте и посещайте блистательные мероприятия.
+        </span></div>
+        </div>
+        </div>
+        <div class="text-center">
+                  <button class="btn btn-start-order">Зарегистрироваться</button>
+              </div></div>
+
+<div class="section two">
+        <div class="container">
+  <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+        <h2 style="color: white;">Регистрационная форма</h2>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
+          <form id="contact-form" class="form" action="#" method="POST" role="form">
+              <div class="form-group">
+                  <label class="form-label" for="name">Фамилия</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Фамилия" tabindex="1" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="email">Имя</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Имя" tabindex="2" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="subject">Отчество</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Отчество" tabindex="3">
+              </div>
+                <div class="form-group">
+                  <label class="form-label" for="subject">Дата рождения</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="дд.мм.гггг" tabindex="4">
+              </div>                       
+              <div class="form-group">
+                  <label class="form-label" for="message">Адрес</label>
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Адрес" tabindex="4" required></textarea>                                 
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn btn-start-order">Зарегистрироваться</button>
+              </div>
+          </form>
+      </div>
+  </div>
+                      <div data-href="http://www.flatata.com/en/competition/vkontakte" data-type="vkontakte" class="block vk last">
+                    <div class="logo"></div>
+                    <div class="name">VK</div>
+                </div>
+</div>
+</div>
+
+	</div>
+
+	<script>
+		$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors:['about', 'registration']
+    });
+});
+</script>
+    <script src="js/order.js"></script>
+</body>
+</html>
