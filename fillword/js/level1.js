@@ -3,7 +3,7 @@
 
 // Цвета
 
-var colors =  {
+const colors =  {
   board:[
   ["P", "A", "T", "N", "G", "K", "Q", "G", "C", "Y"],
   ["N", "N", "C", "Q", "P", "U", "R", "P", "L", "E"],
@@ -35,7 +35,7 @@ solve: [9,0,9,7,4,1,9,1,1,2,5,2,1,2,1,5,2,4,7,4,3,5,6,5,3,5,3,9,5,6,9,6,5,7,9,7,
 
 // Животные
 
-var animals = {
+const animals = {
   board: [
   ["F", "L", "T", "T", "I", "G", "E", "R", "U", "Z", "Z", "C"],
   ["K", "J", "E", "L", "E", "P", "H", "A", "N", "T", "Q", "B"],
@@ -66,7 +66,7 @@ words: [
 solve: [3,0,7,0,2,1,9,1,3,2,5,2,6,2,6,10,7,7,7,10,8,4,8,10,9,7,9,10,0,7,3,7,3,7,3,10,1,3,4,3,5,3,5,8]
 };
 
-var animals2 = {
+const animals2 = {
   board: [
   ["L", "L", "I", "Z", "A", "R", "D", "Z", "E", "B", "R", "A"],
   ["V", "G", "L", "U", "U", "J", "A", "C", "H", "R", "P", "P"],
@@ -92,7 +92,7 @@ words: [
 ]
 };
 
-var vacation = {
+const vacation = {
   board: [
   ["L", "T", "K", "V", "H", "V", "B", "W", "V", "R", "D", "C"],
   ["B", "O", "F", "P", "O", "R", "O", "C", "E", "A", "N", "J"],
@@ -120,7 +120,7 @@ words: [
   "ROCK",
 ]};
 
-var bodyParts = {
+const bodyParts = {
   board: [
   [ 'I', 'F', 'T', 'N', 'O', 'S', 'E', 'T', 'J', 'W' ],
   [ 'P', 'V', 'H', 'A', 'N', 'D', 'P', 'P', 'F', 'D' ],
@@ -147,7 +147,7 @@ words: [
 ]
 };
 
-var bodyParts2 = {
+const bodyParts2 = {
   board: [
   [ 'H', 'K', 'N', 'E', 'E', 'R', 'S', 'E', 'N', 'V' ],
   [ 'E', 'H', 'P', 'I', 'R', 'S', 'Y', 'T', 'N', 'W' ],
@@ -173,7 +173,7 @@ words: [
 ]
 };
 
-var breakfast = {
+const breakfast = {
   board: [
   [ 'L', 'Q', 'E', 'Z', 'N', 'V', 'P', 'O', 'D', 'D', 'M', 'V' ],
   [ 'X', 'S', 'Z', 'S', 'F', 'Z', 'N', 'D', 'V', 'B', 'R', 'E' ],
@@ -201,7 +201,7 @@ words: [
 ]
 };
 
-var days = {
+const days = {
   board: [
   [ 'L', 'M', 'M', 'S', 'U', 'N', 'D', 'A', 'Y', 'S', 'N', 'S' ],
   [ 'R', 'W', 'E', 'D', 'N', 'E', 'S', 'D', 'A', 'Y', 'T', 'A' ],
@@ -228,7 +228,7 @@ words: [
 ]
 };
 
-var dessert = {
+const dessert = {
   board: [
   [ 'M', 'U', 'F', 'F', 'I', 'N', 'U', 'F', 'B', 'O', 'X', 'V' ],
   [ 'V', 'U', 'R', 'X', 'D', 'M', 'Q', 'K', 'R', 'W', 'I', 'J' ],
@@ -255,7 +255,7 @@ words: [
 ]
 };
 
-var family = {
+const family = {
   board: [
   [ 'A', 'K', 'L', 'B', 'U', 'C', 'E', 'D', 'I', 'X' ],
   [ 'B', 'K', 'F', 'R', 'U', 'W', 'B', 'A', 'P', 'S' ],
@@ -281,7 +281,7 @@ words: [
 ]
 };
 
-var berries = {
+const berries = {
   board: [
   [ 'X', 'C', 'R', 'J', 'Z', 'T', 'N', 'O', 'M', 'R', 'N', 'Z' ],
   [ 'W', 'V', 'P', 'P', 'I', 'A', 'K', 'Z', 'T', 'A', 'N', 'X' ],
@@ -310,7 +310,7 @@ words: [
 ]
 };
 
-var fruit = {
+const fruit = {
   board: [
   [ 'K', 'V', 'Y', 'X', 'I', 'V', 'G', 'A', 'B', 'U' ],
   [ 'Z', 'L', 'E', 'M', 'O', 'N', 'R', 'H', 'W', 'B' ],
@@ -336,7 +336,7 @@ words: [
 ]
 };
 
-var furniture = {
+const furniture = {
   board: [
   [ 'X', 'Z', 'S', 'D', 'N', 'B', 'E', 'D', 'H', 'A' ],
   [ 'R', 'D', 'A', 'S', 'I', 'G', 'I', 'S', 'O', 'O' ],
@@ -361,7 +361,7 @@ words: [
 ]
 };
 
-var lunch = {
+const lunch = {
   board: [
   [ 'X', 'A', 'Z', 'Q', 'H', 'Y', 'A', 'P', 'I', 'Z', 'Z', 'A' ],
   [ 'D', 'X', 'B', 'U', 'R', 'G', 'E', 'R', 'V', 'F', 'Y', 'L' ],
@@ -390,7 +390,7 @@ words: [
 ]
 };
 
-var months = {
+const months = {
   board: [
   [ 'Z', 'J', 'T', 'I', 'D', 'A', 'Z', 'J', 'O', 'T', 'X', 'P' ],
   [ 'U', 'Z', 'B', 'Q', 'E', 'U', 'E', 'H', 'N', 'D', 'D', 'Z' ],
@@ -420,7 +420,7 @@ words: [
 ]
 };
 
-var nature = {
+const nature = {
   board: [
   [ 'Q', 'X', 'J', 'E', 'P', 'M', 'H', 'H', 'G', 'Z', 'B', 'O' ],
   [ 'F', 'B', 'C', 'U', 'A', 'Y', 'G', 'R', 'O', 'U', 'N', 'D' ],
@@ -451,7 +451,7 @@ words: [
 };
 
 
-var nature2 = {
+const nature2 = {
   board: [
   [ 'S', 'P', 'I', 'G', 'F', 'S', 'A', 'N', 'D', 'J', 'O', 'P' ],
   [ 'W', 'W', 'D', 'Y', 'F', 'U', 'B', 'F', 'W', 'T', 'G', 'W' ],
@@ -479,7 +479,7 @@ words: [
 ]
 };
 
-var numbers = {
+const numbers = {
   board: [
   [ 'A', 'S', 'I', 'X', 'A', 'E', 'E', 'O', 'A', 'B' ],
   [ 'T', 'V', 'J', 'I', 'R', 'N', 'I', 'N', 'E', 'J' ],
@@ -506,7 +506,7 @@ var numbers = {
   ]
 };
 
-var pets = {
+const pets = {
   board: [
   [ 'W', 'F', 'I', 'S', 'H', 'I', 'J', 'C', 'A', 'H', 'R', 'R' ],
   [ 'T', 'W', 'L', 'V', 'U', 'H', 'M', 'A', 'X', 'A', 'Q', 'Y' ],
@@ -537,7 +537,7 @@ words: [
 ]
 };
 
-var rooms = {
+const rooms = {
   board: [
   [ 'U', 'C', 'W', 'G', 'U', 'B', 'T', 'Z', 'Y', 'K', 'C', 'T' ],
   [ 'K', 'B', 'N', 'A', 'Z', 'B', 'U', 'J', 'L', 'I', 'D', 'J' ],
@@ -569,7 +569,7 @@ words: [
 solve: [0,1,0,7,3,0,3,5,5,1,5,8,6,2,6,10,7,2,10,2,8,1,8,7,11,5,11,11,1,8,8,8,0,9,4,9]
 };
 
-var veggies = {
+const veggies = {
   board: [
   [ 'Q', 'B', 'Z', 'V', 'C', 'A', 'R', 'R', 'O', 'T', 'Z', 'I' ],
   [ 'T', 'R', 'G', 'H', 'Q', 'R', 'M', 'Y', 'H', 'Y', 'N', 'L' ],
@@ -596,7 +596,7 @@ words: [
 ]
 };
 
-var schoolsuplies2 = {
+const schoolsuplies2 = {
   board: [
   [ 'R', 'L', 'S', 'C', 'I', 'S', 'S', 'O', 'R', 'S', 'X', 'C' ],
   [ 'T', 'P', 'R', 'O', 'T', 'R', 'A', 'C', 'T', 'O', 'R', 'P' ],
@@ -624,7 +624,7 @@ words: [
 ]
 };
 
-var schoolsuplies = {
+const schoolsuplies = {
   board: [
   [ 'J', 'V', 'J', 'E', 'E', 'O', 'Y', 'Y', 'Q', 'E', 'S', 'B' ],
   [ 'Q', 'H', 'I', 'C', 'T', 'M', 'W', 'X', 'N', 'Y', 'H', 'I' ],
@@ -653,7 +653,7 @@ words: [
 ]
 };
 
-var seasonWeather = {
+const seasonWeather = {
   board: [
   [ 'W', 'Q', 'S', 'P', 'R', 'I', 'N', 'G', 'X', 'S', 'C', 'S' ],
   [ 'I', 'I', 'T', 'P', 'R', 'H', 'O', 'T', 'B', 'W', 'E', 'U' ],
@@ -683,7 +683,7 @@ words: [
 ]
 };
 
-var shapes = {
+const shapes = {
   board: [
   [ 'B', 'P', 'Q', 'Q', 'T', 'K', 'Y', 'O', 'I', 'B' ],
   [ 'L', 'H', 'E', 'A', 'R', 'T', 'Y', 'V', 'X', 'L' ],
@@ -708,7 +708,7 @@ words: [
 ]
 };
 
-var subjects = {
+const subjects = {
   board: [
   [ 'M', 'C', 'D', 'B', 'U', 'E', 'N', 'C', 'U', 'C', 'A', 'N' ],
   [ 'J', 'Z', 'F', 'G', 'R', 'R', 'M', 'U', 'S', 'I', 'C', 'C' ],
@@ -736,7 +736,7 @@ words: [
 ]
 };
 
-var veggies2 = {
+const veggies2 = {
   board: [
   [ 'G', 'X', 'K', 'K', 'C', 'B', 'E', 'A', 'N', 'S', 'H', 'E' ],
   [ 'P', 'E', 'A', 'S', 'T', 'T', 'D', 'E', 'L', 'C', 'D', 'T' ],
@@ -763,7 +763,7 @@ words: [
 ]
 };
 
-var time = {
+const time = {
   board: [
   [ 'W', 'H', 'P', 'C', 'E', 'V', 'E', 'N', 'I', 'N', 'G', 'M' ],
   [ 'S', 'A', 'F', 'T', 'E', 'R', 'N', 'O', 'O', 'N', 'Q', 'P' ],
@@ -792,7 +792,7 @@ words: [
 ]
 };
 
-var transportation = {
+const transportation = {
   board: [
   [ 'U', 'H', 'K', 'J', 'E', 'B', 'I', 'K', 'E', 'X' ],
   [ 'H', 'E', 'T', 'R', 'A', 'I', 'N', 'C', 'A', 'R' ],

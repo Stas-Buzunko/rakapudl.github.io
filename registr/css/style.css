@@ -12,7 +12,7 @@ a:hover {
 }
 
 .section {
-    height: 1100px;
+    
 }
 
 .title {
@@ -114,10 +114,12 @@ textarea {
 }
 .form-control {
     border-radius: 0;
-    border-color: #ccc;
+    border-color: #940016;
+    background: rgb(242, 219, 185);
     border-width: 0 0 2px 0;
     border-style: none none solid none;
     box-shadow: none;
+    color: #1E1E20;
 }
 .form-control:focus {
     box-shadow: none;
@@ -130,21 +132,24 @@ textarea {
     color: #999 
 }
 .btn-start-order {
-    background: 0 0 #ffffff;
-    border: 1px solid #2f323a;
+    background: 0 0 rgba(247, 4, 48, 0.43);
+    border: 1px solid #C20F2A;
     border-radius: 3px;
-    color: #2f323a;
+    color: #FFFFFF;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: inherit;
     margin: 30px 0;
-    padding: 10px 50px;
+    font-size: 23px;
+    padding: 20px 50px;
     text-transform: uppercase;
     transition: all 0.25s ease 0s;
 }
-.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
-    border-color: #5e9bfc;
-    color: #5e9bfc;
+.btn-start-order:hover, .btn-start-order:active, .btn-start-order:focus {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    -webkit-transform: scale(1.05);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
 }
 
 nav ul {
@@ -180,7 +185,6 @@ nav li.menu:hover {
 }
 
 .text {
-    width: 350px;
     height: 310px;
     text-align: center;
     font-size: 15px;
@@ -188,27 +192,22 @@ nav li.menu:hover {
     background: rgba(226, 101, 99, 0.42);
     color: white;
     border-radius: 60px;
-    margin: 0 12px;
-        padding: 21px;
+    margin: 15px 7px;
+    padding: 21px;
 }
 
 .img {
     width: 900px;
-margin: 47px auto 38px auto;
+    margin: 47px auto 38px auto;
     display: block; 
-}
-
-.center {
-        display: flex;
-    width: 1100px;
-    margin: 0 auto;
 }
 
 
 .section.two {
-    background: url("../img/full_D5lFq93w.jpeg") no-repeat;
+    background: url("../img/bg3.jpg") no-repeat;
     background-size: cover; 
 }
+
 
 .one .btn {
     background: 0 0 rgba(202, 98, 98, 0.37);
@@ -220,7 +219,8 @@ margin: 47px auto 38px auto;
     font-family: "Raleway", sans-serif;
     font-size: 16px;
     line-height: inherit;
-    margin: 50px 0;
+    margin: 0 ;
+    margin-bottom: 20px;
     padding: 20px 70px;
     text-transform: uppercase;
     transition: all 0.25s ease 0s;
@@ -228,7 +228,31 @@ margin: 47px auto 38px auto;
 }
 
 .third {
-    background: url("../img/bg3.png") no-repeat;
+    background: url("../img/1block.jpg") no-repeat;
     background-size: cover; 
     
+}
+
+.centered {
+   text-align: center;
+   font-size: 0;
+}
+.centered > div {
+   float: none;
+   display: inline-block;
+   text-align: left;
+   font-size: 13px;
+}
+
+.clear {
+    clear: both;
+}
+
+.text2 {
+    font-size: 40px;
+    color: white;
+    background: rgba(226, 101, 99, 0.65);
+    text-align: center;
+    padding: 20px;
+    margin: 140px 0 0 0;
 }
