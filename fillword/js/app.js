@@ -8,10 +8,22 @@ var winCount = 0;
 var level, levelName, words, solve;
 
 function setLevel(lvl, title) {
-  level = lvl.board;
+    words = lvl.words;
+
+  var puzzle = wordfind.newPuzzle(
+    words, 
+    {height: 10,
+     width:10,
+    orientations: ['horizontal', 'vertical'], 
+    preferOverlap: false
+    }
+  );
+  // wordfind.populate(puzzle);
+
+  level = wordfind.populate(puzzle);
   levelName = title;
-  words = lvl.words;
-  solve = lvl.solve;
+  
+  solve =  wordfind.solve(puzzle, words);
 };
 
 setLevel(rooms, "rooms");
@@ -175,3 +187,5 @@ function randColor()
     c2.rgb = 'rgba('+c2.r+','+c2.g+','+c2.b+', 0.4)';
     return 'radial-gradient(at center, '+c1.rgb+', '+c2.rgb+')';
 };
+
+
